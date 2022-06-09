@@ -69,7 +69,7 @@ class _MenuBarState extends State<MenuBar> {
               color: white,
               child: Center(
                 child: CircleAvatar(
-                  backgroundColor: green,
+                  backgroundColor: Colors.blue,
                   radius: 3,
                 ),
               ),

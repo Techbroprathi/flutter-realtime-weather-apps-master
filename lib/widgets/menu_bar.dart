@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_upwork_project/core/color.dart';
 import 'package:flutter_upwork_project/core/text_style.dart';
+import 'package:flutter_upwork_project/data/plant_menu.dart';
 
 import 'package:flutter_upwork_project/widgets/clipper.dart';
 
@@ -18,7 +19,21 @@ class _MenuBarState extends State<MenuBar> {
     return Container(
       width: 85.0,
       color: green,
-
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          for (int i = 0; i < menuItems.length; i++)
+            menuButton(
+              text: menuItems[i].name,
+              onTap: () {
+                setState(() {
+                  selectIndex = i;
+                });
+              },
+              index: i,
+            ),
+        ],
+      ),
     );
   }
 

@@ -57,6 +57,11 @@ class _CropState extends State<Crop> {
                 ),
               ],
             ),
+            CustomAppBar(),
+            Align(
+              alignment: Alignment.bottomLeft,
+
+            )
 
           ],
         ),

@@ -21,13 +21,7 @@ class CustomAppBar extends StatelessWidget {
               color: white,
             ),
           ),
-          TextButton(
-            onPressed: () {},
-            child: SvgPicture.asset(
-              'assets/icon/search.svg',
-              height: 25.0,
-            ),
-          ),
+
         ],
       ),
     );
